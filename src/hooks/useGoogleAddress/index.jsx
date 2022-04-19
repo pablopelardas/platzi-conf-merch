@@ -6,7 +6,7 @@ const useGoogleAddress = (address) => {
   console.log(address);
   useEffect(() => {
     const params = {
-      access_key: 'd8e4e204afda279ff5f6f89558cff44e',
+      access_key: process.env.POSITIONSTACK_APIKEY,
       query: address,
     };
     axios

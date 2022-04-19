@@ -12,7 +12,7 @@ const Map = ({ location }) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyB1QEQZQpR-hpw2Rw8F0FJvnqNuzc4vJkM">
+    <LoadScript googleMapsApiKey={process.env.MAPS_APIKEY}>
       <GoogleMap mapContainerStyle={mapStyles} zoom={17} center={defaultCenter}>
         <Marker position={defaultCenter} draggable={true} title="Drag me!" />
       </GoogleMap>
