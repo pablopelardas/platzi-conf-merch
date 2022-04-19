@@ -1,6 +1,15 @@
 export default {
   cart: [],
-  buyer: {},
+  buyer: {
+    name: 'Pablo',
+    email: 'pablo.pelardas@gmail.com',
+    address: 'La Rioja 570',
+    apto: '',
+    city: 'Tigre',
+    country: 'Argentina',
+    cp: '1617',
+    state: 'Buenos Aires',
+  },
   orders: [],
   products: [
     {
